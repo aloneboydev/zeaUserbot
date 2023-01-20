@@ -1,9 +1,9 @@
-# Amang Userbot
-# Copyright (C) 2021-2022 amangtele
+# Ayra - UserBot
+# Copyright (C) 2021-2022 senpai80
 #
-# This file is a part of < https://github.com/amangtele/AmangUserbot/ >
+# This file is a part of < https://github.com/senpai80/Ayra/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/amangtele/AmangUserbot/blob/main/LICENSE/>.
+# <https://www.github.com/senpai80/Ayra/blob/main/LICENSE/>.
 
 from telethon.errors import (
     BotMethodInvalidError,
@@ -11,29 +11,29 @@ from telethon.errors import (
     ChatSendMediaForbiddenError,
 )
 
-from . import LOG_CHANNEL, LOGS, Button, asst, amang_cmd, eor, get_string
+from . import LOG_CHANNEL, LOGS, Button, asst, ayra_cmd, eor, get_string
 
 REPOMSG = """
-◈ **AmangUserbot​** ◈\n
-◈ Repo - [Click Here](https://github.com/amangtele/Amang)
-◈ Addons - [Click Here](https://github.com/amangtele/addons)
-◈ Support - @purapuranyagcsupport
+◈ **ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ​** ◈\n
+◈ Repo - [Click Here](https://github.com/Onlymeriz/Ayra)
+◈ Addons - [Click Here](https://github.com/senpai80/addons)
+◈ Support - @ramsupportt
 """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/amangtele/Amang"),
-        Button.url("Addons", "https://github.com/amangtele/addons"),
+        Button.url(get_string("bot_3"), "https://github.com/Onlymeriz/Ayra"),
+        Button.url("Addons", "https://github.com/Onlymeriz/addons"),
     ],
-    [Button.url("Support Group", "t.me/purapuranyagcsupport")],
+    [Button.url("Support Group", "t.me/ramsupportt")],
 ]
 
-AYSTRING = """🎇 **Thanks for Deploying AmangUserbot*
+AYSTRING = """🎇 **Thanks for Deploying ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ!**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
 
 
-@amang_cmd(
+@ayra_cmd(
     pattern="repo$",
     manager=True,
 )
@@ -53,8 +53,8 @@ async def repify(e):
     await e.eor(REPOMSG)
 
 
-@amang_cmd(pattern="amang$")
-async def useAmang(rs):
+@ayra_cmd(pattern="ayra$")
+async def useAyra(rs):
     button = Button.inline("Start >>", "initft_2")
     msg = await asst.send_message(
         LOG_CHANNEL,
