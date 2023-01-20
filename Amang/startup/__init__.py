@@ -43,7 +43,7 @@ if run_as_module:
     from ..version import __version__ as __Amang__
     from ..version import amang_version
 
-    file = f"amang{sys.argv[6]}.log" if len(sys.argv) > 6 else amanga.log"
+    file = f"amang{sys.argv[6]}.log" if len(sys.argv) > 6 else amang.log"
 
     if os.path.exists(file):
         os.remove(file)
