@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Amang Userbot
+# Copyright (C) 2021-2022 amangtele
+#
+# This file is a part of < https://github.com/amangtele// >
+# PLease read the GNU Affero General Public License in <https://www.github.com/amangtele/AmangUserbot/blob/main/LICENSE/>.
+
+
+echo "
+            
+                 Amang Userbot
+
+
+"
+if [ -f .env ] ; then  set -o allexport; source .env; set +o allexport ; fi
+if [ $SESSION1 ] ; then wget https://gist.githubusercontent.com/amangtele/1c8fdab2949b4711b2ce589a679fa8ae/raw/aa1303b53be76baf3b9ee76cda2d4605c2226c66/main.py && python3 main.py ; else python3 -m Amang ; fi
