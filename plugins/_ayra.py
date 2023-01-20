@@ -15,15 +15,15 @@ from . import LOG_CHANNEL, LOGS, Button, asst, amang_cmd, eor, get_string
 
 REPOMSG = """
 ◈ **AmangUserbot​** ◈\n
-◈ Repo - [Click Here](https://github.com/Onlymeriz/Amang)
+◈ Repo - [Click Here](https://github.com/amangtele/Amang)
 ◈ Addons - [Click Here](https://github.com/amangtele/addons)
 ◈ Support - @purapuranyagcsupport
 """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/Onlymeriz/Amang"),
-        Button.url("Addons", "https://github.com/Onlymeriz/addons"),
+        Button.url(get_string("bot_3"), "https://github.com/amangtele/Amang"),
+        Button.url("Addons", "https://github.com/amangtele/addons"),
     ],
     [Button.url("Support Group", "t.me/purapuranyagcsupport")],
 ]
