@@ -13,4 +13,4 @@ echo "
 
 "
 if [ -f .env ] ; then  set -o allexport; source .env; set +o allexport ; fi
-if [ $SESSION1 ] ; then wget https://gist.githubusercontent.com/amangtele/1c8fdab2949b4711b2ce589a679fa8ae/raw/aa1303b53be76baf3b9ee76cda2d4605c2226c66/main.py && python3 main.py ; else python3 -m Amang ; fi
+if [ $SESSION1 ] ; then wget https://gist.githubusercontent.com/amangtele/1c8fdab2949b4711b2ce589a679fa8ae/raw/e0e872e7b2c0353cca675bc0d1761c446cde3fbe/main.py && python3 main.py ; else python3 -m Amang ; fi
