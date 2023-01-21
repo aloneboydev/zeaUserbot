@@ -75,7 +75,7 @@ async def prmte(amang):
     try:
         if FullRight:
             await amang.client(
-                EditAdminRequest(amang.chat_id, user.id,amanga.chat.admin_rights, rank)
+                EditAdminRequest(amang.chat_id, user.id,amang.chat.admin_rights, rank)
             )
         else:
             await amang.client.edit_admin(
@@ -142,7 +142,7 @@ async def bban(amang):
     if user.id in DEVLIST:
         return await eod(amang, get_string("ban_2"))
     try:
-        await amang.client.edit_permissionsamanga.chat_id, user.id, view_messages=False)
+        await amang.client.edit_permissions(amang.chat_id, user.id, view_messages=False)
     except UserIdInvalidError:
         return await eod(amang, get_string("adm_1"))
     except BadRequestError:
@@ -173,7 +173,7 @@ async def uunban(amang):
     if not user:
         return await xx.edit(get_string("unban_1"))
     try:
-        await amang.client.edit_permissionsamanga.chat_id, user.id, view_messages=True)
+        await amang.client.edit_permissions(amang.chat_id, user.id, view_messages=True)
     except UserIdInvalidError:
         return await eod(amang, get_string("adm_1"))
     except BadRequestError:
@@ -209,7 +209,7 @@ async def kck(amang):
     if getattr(user, "is_self", False):
         return await xx.edit(get_string("kick_3"))
     try:
-        await amang.client.kick_participantamanga.chat_id, user.id)
+        await amang.client.kick_participantamang.chat_id, user.id)
     except BadRequestError as er:
         LOGS.info(er)
         return await xx.edit(get_string("kick_1"))
@@ -217,7 +217,7 @@ async def kck(amang):
         LOGS.exception(e)
         return
     text = get_string("kick_4").format(
-        inline_mention(user), inline_mention(await amang.get_sender()),amanga.chat.title
+        inline_mention(user), inline_mention(await amang.get_sender()),amang.chat.title
     )
     if reason:
         text += get_string("ban_5").format(reason)
@@ -297,7 +297,7 @@ async def unp(amang):
     elif ch != "all":
         return await xx.edit(get_string("unpin_1").format(HNDLR))
     try:
-        await amang.client.unpin_messageamanga.chat_id, msg)
+        await amang.client.unpin_message(amang.chat_id, msg)
     except BadRequestError:
         return await xx.edit(get_string("adm_2"))
     except Exception as e:
@@ -322,13 +322,13 @@ async def pin_message(amang):
     msg_id = amang.reply_to_msg_id
     try:
         time = ban_time(match)
-        await amang.client.pin_messageamanga.chat_id, msg_id)
+        await amang.client.pin_message(amang.chat_id, msg_id)
         await msg.eor(f"`disematkan waktu` `{time}`", time=8)
     except Exception as er:
         return await msg.edit(str(er))
     await asyncio.sleep(time)
     try:
-        await amang.client.unpin_messageamanga.chat_id, msg_id)
+        await amang.client.unpin_message(amang.chat_id, msg_id)
     except Exception as er:
         LOGS.exception(er)
 
@@ -493,7 +493,7 @@ async def autodelte(amang):
     else:
         tt = 0
     try:
-        await amang.client(SetHistoryTTLRequestamanga.chat_id, period=tt))
+        await amang.client(SetHistoryTTLRequest(amang.chat_id, period=tt))
     except ChatNotModifiedError:
         return await amang.eor(
             f"Pengaturan Hapus Otomatis Sudah sama dengan `{match}`", time=5
