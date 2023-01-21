@@ -162,7 +162,7 @@ async def twarns(e):
         await e.eor("`Tidak ada Peringatan`")
 
 
-@amangggg_cmd(pattern="setwarn( (.*)|$)", manager=True)
+@amang_cmd(pattern="setwarn( (.*)|$)", manager=True)
 async def warnset(e):
     ok = e.pattern_match.group(1).strip()
     if not ok:
