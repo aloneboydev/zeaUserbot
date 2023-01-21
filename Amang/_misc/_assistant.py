@@ -72,7 +72,7 @@ def callback(data=None, from_users=[], admins=False, owner=False, **kwargs):
             if from_users and event.sender_id not in from_users:
                 return await event.answer("Not for You!", alert=True)
             if owner and event.sender_id not in owner_and_sudos():
-                return await event.answer(f"This is {OWNER}'s bot!!")
+                return await event.answer(f"DEPLOY SENDIRI BANH!!")
             try:
                 await func(event)
             except Exception as er:
