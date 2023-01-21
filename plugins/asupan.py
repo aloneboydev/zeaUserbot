@@ -26,6 +26,12 @@ from random import choice
 from pyrogram import Client, filters, enums
 from pyrogram.types import ChatPermissions, ChatPrivileges, Message
 from pyrogram import Client as amang
+import string
+from time import sleep
+from . import (
+    eor,
+    amang_cmd,
+)
 
 
 @amang_cmd(pattern="asupan$")
