@@ -236,8 +236,8 @@ async def autopilot():
         try:
             r = await amang_bot(
                 CreateChannelRequest(
-                    title="Aʏʀᴀ ꭙ Lᴏɢs",
-                    about="Aʏʀᴀ ꭙ Gʀᴏᴜᴘ \n\n Cʀᴇᴀᴛᴇᴅ Bʏ @purapuranyagcsupport",
+                    title="Amang Logs",
+                    about="Amang Support \n\n Cʀᴇᴀᴛᴇᴅ Bʏ @amangsupportgrup",
                     megagroup=True,
                 ),
             )
