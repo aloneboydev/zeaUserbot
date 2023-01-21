@@ -151,7 +151,7 @@ async def DummyHandler(amang):
                 await send.delete()
             else:
                 await amang.reply(file=med)
-    elif (amang.user_left oramanga.user_kicked) and get_goodbyamangra.chat_id):
+    elif (amang.user_left or.amanga.user_kicked) and get_goodbye(amang.chat_id):
         user = await amang.get_user()
         chat = await amang.get_chat()
         title = chat.title or "this chat"
