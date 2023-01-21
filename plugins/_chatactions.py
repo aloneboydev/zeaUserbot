@@ -70,7 +70,7 @@ async def DummyHandler(amang):
                 res = await amang_bot.inline_query(
                     asst.me.username, f"fsub {user.id}_{joinchat}"
                 )
-                await res[0].click(amang.chat_id, reply_toamanga.action_message.id)
+                await res[0].click(amang.chat_id, reply_to=amang.action_message.id)
 
     if amang.user_joined or amang.added_by:
         user = await amang.get_user()
@@ -151,7 +151,7 @@ async def DummyHandler(amang):
                 await send.delete()
             else:
                 await amang.reply(file=med)
-    elif (amang.user_left or.amanga.user_kicked) and get_goodbye(amang.chat_id):
+    elif (amang.user_left or amang.user_kicked) and get_goodbye(amang.chat_id):
         user = await amang.get_user()
         chat = await amang.get_chat()
         title = chat.title or "this chat"
