@@ -63,7 +63,7 @@ async def _callback_check(event):
 
 
 async def get_update_linked_chat(event):
-    if _amang_cache.get("LINKED_CHATS") and_amang_cache["LINKED_CHATS"].get(event.chat_id):
+    if _amang_cache.get("LINKED_CHATS") and _amang_cache["LINKED_CHATS"].get(event.chat_id):
         _ignore = _amang_cache["LINKED_CHATS"][event.chat_id]["linked_chat"]
     else:
         channel = await event.client(
