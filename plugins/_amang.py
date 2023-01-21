@@ -14,18 +14,18 @@ from telethon.errors import (
 from . import LOG_CHANNEL, LOGS, Button, asst, ayra_cmd, eor, get_string
 
 REPOMSG = """
-◈ **ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ​** ◈\n
-◈ Repo - [Click Here](https://github.com/Onlymeriz/Ayra)
-◈ Addons - [Click Here](https://github.com/senpai80/addons)
-◈ Support - @ramsupportt
+◈ **Amang ꭙ ᴜꜱᴇʀʙᴏᴛ​** ◈\n
+◈ Repo - [Click Here](https://github.com/amangtele/AmangUserbot)
+◈ Addons - [Click Here](https://github.com/amangtele/addons)
+◈ Support - @amangsupportgrup
 """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/Onlymeriz/Ayra"),
-        Button.url("Addons", "https://github.com/Onlymeriz/addons"),
+        Button.url(get_string("bot_3"), "https://github.com/amangtele/AmangUserbot"),
+        Button.url("Addons", "https://github.com/amangtele/addons"),
     ],
-    [Button.url("Support Group", "t.me/ramsupportt")],
+    [Button.url("Support Group", "t.me/amangsupportgrup")],
 ]
 
 AYSTRING = """🎇 **Thanks for Deploying ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ!**
@@ -33,7 +33,7 @@ AYSTRING = """🎇 **Thanks for Deploying ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ!**
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
 
 
-@ayra_cmd(
+@amang_cmd(
     pattern="repo$",
     manager=True,
 )
@@ -53,7 +53,7 @@ async def repify(e):
     await e.eor(REPOMSG)
 
 
-@ayra_cmd(pattern="ayra$")
+@amang_cmd(pattern="amang$")
 async def useAyra(rs):
     button = Button.inline("Start >>", "initft_2")
     msg = await asst.send_message(
