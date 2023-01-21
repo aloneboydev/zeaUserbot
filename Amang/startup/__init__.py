@@ -89,9 +89,9 @@ if run_as_module:
     )
 
     LOGS.info(f"Python version - {platform.python_version()}")
-    LOGS.info(f"py-Amang Version - {__amang__}")
+    LOGS.info(f"py-Amang Version - {__Ayra__}")
     LOGS.info(f"Telethon Version - {__version__} [Layer: {LAYER}]")
-    LOGS.info(f"Amang Version - {amang_version} [{HOSTED_ON}]")
+    LOGS.info(f"Amang Version - {ayra_version} [{HOSTED_ON}]")
 
     try:
         from safety.tools import *
