@@ -55,7 +55,7 @@ async def DummyHandler(amang):
     # force subscribe
     if (
         udB.get_key("FORCESUB")
-        and ((amang.user_joined oramanga.user_added))
+        and ((amang.user_joined or amang.user_added))
         and get_forcesetting(amang.chat_id)
     ):
         user = await amang.get_user()
