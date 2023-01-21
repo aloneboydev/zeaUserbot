@@ -1,9 +1,9 @@
-# Ayra - UserBot
-# Copyright (C) 2021-2022 senpai80
+# Amang Userbot
+# Copyright (C) 2021-2022 amangtele
 #
-# This file is a part of < https://github.com/senpai80/Ayra/ >
+# This file is a part of < https://github.com/amangtele/AmangUserbot/ >
 # PLease read the GNU Affero General Public License in
-# <https://www.github.com/senpai80/Ayra/blob/main/LICENSE/>.
+# <https://www.github.com/amangtele/AmangUserbot/blob/main/LICENSE/>.
 
 import os
 import platform
@@ -40,16 +40,16 @@ if run_as_module:
     from telethon import __version__
     from telethon.tl.alltlobjects import LAYER
 
-    from ..version import __version__ as __Ayra__
+    from ..version import __version__ as __Amang__
     from ..version import amang_version
 
-    file = f"ayra{sys.argv[6]}.log" if len(sys.argv) > 6 else "ayra.log"
+     file = f"amang{sys.argv[6]}.log" if len(sys.argv) > 6 else "amang.log"
 
     if os.path.exists(file):
         os.remove(file)
 
     HOSTED_ON = where_hosted()
-    LOGS = getLogger("AyraLogs")
+    LOGS = getLogger("AmangLogs")
     TelethonLogger = getLogger("Telethon")
     TelethonLogger.setLevel(INFO)
 
@@ -89,9 +89,9 @@ if run_as_module:
     )
 
     LOGS.info(f"Python version - {platform.python_version()}")
-    LOGS.info(f"py-Ayra Version - {__Ayra__}")
+    LOGS.info(f"py-Amang Version - {__Amang__}")
     LOGS.info(f"Telethon Version - {__version__} [Layer: {LAYER}]")
-    LOGS.info(f"Ayra Version - {amang_version} [{HOSTED_ON}]")
+    LOGS.info(f"Amang Version - {amang_version} [{HOSTED_ON}]")
 
     try:
         from safety.tools import *
