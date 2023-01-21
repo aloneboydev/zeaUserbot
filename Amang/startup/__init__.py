@@ -41,7 +41,7 @@ if run_as_module:
     from telethon.tl.alltlobjects import LAYER
 
     from ..version import __version__ as __Ayra__
-    from ..version import Amang_version
+    from ..version import amang_version
 
     file = f"ayra{sys.argv[6]}.log" if len(sys.argv) > 6 else "ayra.log"
 
