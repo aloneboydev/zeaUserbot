@@ -231,7 +231,7 @@ async def shutdownbot(amang):
 )
 async def _(event):
     opt = event.pattern_match.group(1).strip()
-    file = f"ayra{sys.argv[-1]}.log" if len(sys.argv) > 1 else ayra.log"
+    file = f"amang{sys.argv[-1]}.log" if len(sys.argv) > 1 else amang.log"
     if opt == "heroku":
         await heroku_logs(event)
     elif opt == "carbon" and Carbon:
