@@ -27,7 +27,6 @@ from pyrogram import Client, filters, enums
 from pyrogram.types import ChatPermissions, ChatPrivileges, Message
 from pyrogram import Client as amang
 
-from Amang import BLACKLIST_CHAT
 from Amang import CMD_HANDLER as cmd
 from Amang import CMD_HELP
 from Amang.dB import amang_cmd, edit_or_reply
