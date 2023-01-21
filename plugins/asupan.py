@@ -27,8 +27,6 @@ from pyrogram import Client, filters, enums
 from pyrogram.types import ChatPermissions, ChatPrivileges, Message
 from pyrogram import Client as amang
 
-from Amang.dB import amang_cmd, edit_or_reply
-
 
 @amang_cmd(pattern="asupan$")
 async def _(event):
