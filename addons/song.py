@@ -54,9 +54,9 @@ async def original(event):
 
 @amang_cmd(pattern="song ?(.*)")
 async def _(event):
-    ultroid_bot = event.client
+    amang_bot = event.client
     try:
-        await ultroid_bot(ImportChatInviteRequest("DdR2SUvJPBouSW4QlbJU4g"))
+        await amang_bot(ImportChatInviteRequest("DdR2SUvJPBouSW4QlbJU4g"))
     except UserAlreadyParticipantError:
         pass
     except Exception:
@@ -73,7 +73,7 @@ async def _(event):
     chat = -1001271479322
     current_chat = event.chat_id
     try:
-        async for event in ultroid_bot.iter_messages(
+        async for event in amang_bot.iter_messages(
             chat, search=args, limit=1, filter=filtermus
         ):
             await ultroid_bot.send_file(current_chat, event, caption=event.message)
