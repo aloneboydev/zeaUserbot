@@ -47,7 +47,7 @@ async def DummyHandler(amang):
 
     # thank members
     if must_thank(amang.chat_id):
-        chat_count = (await amang.client.get_participantsamanga.chat_id, limit=0)).total
+        chat_count = (await amang.client.get_participants(amang.chat_id, limit=0)).total
         if chat_count % 100 == 0:
             stik_id = chat_count / 100 - 1
             sticker = stickers[stik_id]
