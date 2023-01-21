@@ -91,7 +91,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
             if owner and event.sender_id not in owner_and_sudos():
                 res = [
                     await event.builder.article(
-                        title="Amang Userbot,
+                        title="Amang Userbot",
                         url="https://t.me/purapuranyagcsupport​",
                         description="©↻ꝛɪᴢ",
                         text=MSG,
