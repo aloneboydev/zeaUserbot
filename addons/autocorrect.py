@@ -11,7 +11,7 @@ __doc__ = get_help("help_autocorrect")
 
 import string
 
-from . import HNDLR, LOGS, get_string, udB, ultroid_bot, amang_cmd  # ignore: pylint
+from . import HNDLR, LOGS, get_string, udB, amang_bot, amang_cmd  # ignore: pylint
 
 try:
     from gingerit.gingerit import GingerIt
@@ -27,7 +27,7 @@ from telethon import events
 async def acc(e):
     if not udB.get_key("AUTOCORRECT"):
         udB.set_key("AUTOCORRECT", "True")
-        ultroid_bot.add_handler(
+        amang_bot.add_handler(
             gramme, events.NewMessage(outgoing=True, func=lambda x: x.text)
         )
         return await e.eor(get_string("act_1"), time=5)
@@ -54,6 +54,6 @@ async def gramme(event):
 
 
 if GingerIt and udB.get_key("AUTOCORRECT"):
-    ultroid_bot.add_handler(
+    amang_bot.add_handler(
         gramme, events.NewMessage(outgoing=True, func=lambda x: x.text)
     )
