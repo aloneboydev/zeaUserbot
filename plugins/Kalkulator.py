@@ -40,7 +40,7 @@ m = [
     "÷",
 ]
 tamangd = [Button.inline(f"{x}", data=f"calc{x}") for x in m]
-lst = list(zip(tamangd[::4], amangad[1::4],amangrad[2::4]amangyrad[3::4]))
+lst = list(zip(tamangd[::4], tamangd[1::4], tamangd[2::4] tamangd[3::4]))
 lst.append([Button.inline("=", data="calc=")])
 
 
