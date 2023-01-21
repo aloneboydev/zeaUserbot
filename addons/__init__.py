@@ -8,4 +8,5 @@
 
 from plugins import *
 
-bot = amang_bot, ultroid_bot
+bot = amang_bot
+bot = ultroid_bot
