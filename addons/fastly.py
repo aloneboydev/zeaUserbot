@@ -19,7 +19,7 @@ The bot will try to auto reply first to the messages by @FastlyWriteBot
 
 from telegraph import upload_file
 from telethon import events
-from . import udB, LOGS, ultroid_bot, amang_cmd, async_searcher
+from . import udB, LOGS, amang_cmd, async_searcher
 from os import remove
 
 base_url = "https://api.ocr.space/parse/imageurl?apikey={api}&url={tgraph}"
