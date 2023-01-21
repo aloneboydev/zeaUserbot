@@ -89,7 +89,7 @@ if run_as_module:
     )
 
     LOGS.info(f"Python version - {platform.python_version()}")
-    LOGS.info(f"py-Amang Version - {__Amang__}")
+    LOGS.info(f"py-Amang Version - {__amang__}")
     LOGS.info(f"Telethon Version - {__version__} [Layer: {LAYER}]")
     LOGS.info(f"Amang Version - {amang_version} [{HOSTED_ON}]")
 
