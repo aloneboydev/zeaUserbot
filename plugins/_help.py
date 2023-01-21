@@ -89,7 +89,7 @@ async def _help(amang):
             await amang.eor("Error 🤔 occured.")
     else:
         try:
-            results = await amang.client.inline_query(asst.me.username, amanga")
+            results = await amang.client.inline_query(asst.me.username, amang")
         except BotMethodInvalidError:
             z = []
             for x in LIST.values():
