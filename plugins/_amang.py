@@ -11,10 +11,10 @@ from telethon.errors import (
     ChatSendMediaForbiddenError,
 )
 
-from . import LOG_CHANNEL, LOGS, Button, asst, ayra_cmd, eor, get_string
+from . import LOG_CHANNEL, LOGS, Button, asst, amang_cmd, eor, get_string
 
 REPOMSG = """
-◈ **Amang ꭙ ᴜꜱᴇʀʙᴏᴛ​** ◈\n
+◈ **Amang Userbot** ◈\n
 ◈ Repo - [Click Here](https://github.com/amangtele/AmangUserbot)
 ◈ Addons - [Click Here](https://github.com/amangtele/addons)
 ◈ Support - @amangsupportgrup
@@ -28,7 +28,7 @@ RP_BUTTONS = [
     [Button.url("Support Group", "t.me/amangsupportgrup")],
 ]
 
-AYSTRING = """🎇 **Thanks for Deploying ᴀʏʀᴀ ꭙ ᴜꜱᴇʀʙᴏᴛ!**
+AYSTRING = """🎇 **Thanks for Deploying Amang Userbot!**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
 
@@ -59,7 +59,7 @@ async def useAyra(rs):
     msg = await asst.send_message(
         LOG_CHANNEL,
         AYSTRING,
-        file="https://graph.org/file/a51b51ca8a7cc5327fd42.jpg",
+        file="https://telegra.ph/file/4fe47bc238c18b11f8258.jpg",
         buttons=button,
     )
     if not (rs.chat_id == LOG_CHANNEL and rs.client._bot):
