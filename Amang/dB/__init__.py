@@ -29,15 +29,15 @@ DEVLIST = [
     1191668125, # Rendy
     1488093812, # @ControlErrors
     2073506739, # @amwang
-    966484443,  #@rojaktana
+    966484443,  # @bukankenjan
     
 ]
 
 AMANG_IMAGES = [
     f"https://graph.org/file/{_}.jpg"
     for _ in [
-        "a51b51ca8a7cc5327fd42",
-        "02f9ca4617cec58377b9d",
+        "4fe47bc238c18b11f8258",
+        "4fe47bc238c18b11f8258",
     ]
 ]
 
