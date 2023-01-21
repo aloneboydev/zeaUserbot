@@ -42,7 +42,7 @@ async def _help(amang):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Addons"][plug]:
                     output += i
-                output += "\n◈ ʌʏꝛᴀ ꭙ ᴜꜱᴇꝛʙᴏᴛ"
+                output += "\n◈ Amang Userbot"
                 await amang.eor(output)
             else:
                 try:
@@ -50,7 +50,7 @@ async def _help(amang):
                     for d in LIST[plug]:
                         x += HNDLR + d
                         x += "\n"
-                    x += "\n◈ ʌʏꝛᴀ ꭙ ᴜꜱᴇꝛʙᴏᴛ"
+                    x += "\n◈ AmangUserbot"
                     await amang.eor(x)
                 except BaseException:
                     file = None
@@ -82,7 +82,7 @@ async def _help(amang):
                     elif HELP.get("Addons") and file in HELP["Addons"]:
                         for i in HELP["Addons"][file]:
                             output += i
-                    output += "\n◈ ʌʏꝛᴀ ꭙ ᴜꜱᴇꝛʙᴏᴛ"
+                    output += "\n◈ AmangUserbot"
                     await amang.eor(output)
         except BaseException as er:
             LOGS.exception(er)
