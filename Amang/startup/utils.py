@@ -53,7 +53,7 @@ def load_addons(plugin_name):
     mod.eor = eor
     mod.edit_or_reply = eor
     mod.asst_cmd = asst_cmd
-    mod.amang_cmd =amanga_cmd
+    mod.amang_cmd =amang_cmd
     mod.on_cmd = amang_cmd
     mod.callback = callback
     mod.Redis = udB.get_key
