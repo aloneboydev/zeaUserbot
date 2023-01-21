@@ -209,7 +209,7 @@ async def kck(amang):
     if getattr(user, "is_self", False):
         return await xx.edit(get_string("kick_3"))
     try:
-        await amang.client.kick_participantamang.chat_id, user.id)
+        await amang.client.kick_participant(amang.chat_id, user.id)
     except BadRequestError as er:
         LOGS.info(er)
         return await xx.edit(get_string("kick_1"))
