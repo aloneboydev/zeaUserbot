@@ -9,4 +9,3 @@
 from plugins import *
 
 bot = amang_bot
-bot = ultroid_bot
