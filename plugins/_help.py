@@ -36,7 +36,7 @@ async def _help(amang):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Official"][plug]:
                     output += i
-                output += "\n◈ ʌʏꝛᴀ ꭙ ᴜꜱᴇꝛʙᴏᴛ"
+                output += "\n◈ Amang Userbot"
                 await amang.eor(output)
             elif HELP.get("Addons") and plug in HELP["Addons"]:
                 output = f"**Plugin** - `{plug}`\n"
@@ -89,7 +89,7 @@ async def _help(amang):
             await amang.eor("Error 🤔 occured.")
     else:
         try:
-            results = await amang.client.inline_query(asst.me.username, amang")
+            results = await amang.client.inline_query(asst.me.username, "amang")
         except BotMethodInvalidError:
             z = []
             for x in LIST.values():
