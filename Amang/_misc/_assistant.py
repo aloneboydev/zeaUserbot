@@ -24,7 +24,7 @@ MSG = f"""
 **AmangUserbot​**
 ➖➖➖➖➖➖➖➖➖➖
 **Owner**: [{OWNER}](tg://user?id={amang_bot.uid})
-**Support**: @purapuranyagcsupport
+**Support**: @amangsupportgrup
 ➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -92,8 +92,8 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                 res = [
                     await event.builder.article(
                         title="Amang Userbot",
-                        url="https://t.me/purapuranyagcsupport​",
-                        description="©↻ꝛɪᴢ",
+                        url="https://t.me/purapuranyagcsupport",
+                        description="©Amang",
                         text=MSG,
                         thumb=InputWebDocument(
                             "https://telegra.ph/file/4fe47bc238c18b11f8258.jpg",
@@ -127,7 +127,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                                 title="Unhandled Exception has Occured!",
                                 text=error_text(),
                                 buttons=Button.url(
-                                    "Report", "https://t.me/purapuranyagcsupport"
+                                    "Report", "https://t.me/amangsupportgrup"
                                 ),
                             )
                         ]
