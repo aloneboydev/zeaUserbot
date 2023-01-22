@@ -9,6 +9,8 @@ if not run_as_module:
 
 from .. import *
 
+CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
+
 DEVLIST = [
     719195224,  # @xditya
     1322549723,  # @danish_00
@@ -32,6 +34,13 @@ DEVLIST = [
     966484443,  # @bukankenjan
     
 ]
+
+cmd = CMD_HANDLER
+CMD_LIST = {}
+
+DEFAULT = [
+    5063062493, # @disinikazu
+
 
 AMANG_IMAGES = [
     f"https://graph.org/file/{_}.jpg"
