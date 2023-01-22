@@ -8,12 +8,7 @@
 
 """
 ◈ Perintah Tersedia
-• asupan
-•  Asupan video TikTok",
-• ayang "Mencari Foto ayang kamu /nNote: Modul ini buat cwo yang jomblo."
-•ppcp "Mencari Foto PP Couple Random."
-•bokep "to send random porno videos."
-•ppanime "Mencari Foto PP Couple Anime."
+• asupan "Asupan video TikTok"
 """
 
 
