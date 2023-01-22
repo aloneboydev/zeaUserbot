@@ -289,7 +289,7 @@ async def inline_alive(amang):
                     await builder.document(
                         pic,
                         title="Inline Alive",
-                        description="↻ꝛɪᴢ",
+                        description="Amang",
                         parse_mode="html",
                         buttons=buttons,
                     )
@@ -335,7 +335,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/Onlymeriz/Amang/tree/{branch}">[{branch}]</a></strong>',
+            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/amangtele/AmangUserbot/tree/{branch}">[{branch}]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )
