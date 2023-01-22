@@ -29,7 +29,7 @@ from Amang._misc._decorators import amang_cmd, compile_pattern
 from Amang._misc import owner_and_sudos, sudoers
 from Amang.fns.admins import admin_check
 from Amang._misc._wrappers import eod, eor
-from Amang.dB import DEVLIST, AMANG_IMAGES
+from Amang.dB import DEVLIST, AMANG_IMAGES, DEFAULT
 from Amang.fns.ytdl import get_videos_link
 from Amang.fns.helper import *
 from Amang.fns.info import *
