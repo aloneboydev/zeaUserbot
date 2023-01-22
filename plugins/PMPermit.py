@@ -121,7 +121,7 @@ async def delete_pm_warn_msgs(chat: int):
 
 if udB.get_key("PMLOG"):
 
-    @amang(
+    @amang_cmd(
         pattern="logpm$",
     )
     async def _(e):
@@ -133,7 +133,7 @@ if udB.get_key("PMLOG"):
         nolog_user(e.chat_id)
         return await e.eor("`Now I Will log msgs from here.`", time=3)
 
-    @amang(
+    @amang_cmd(
         pattern="nologpm$",
     )
     async def _(e):
@@ -394,7 +394,7 @@ if udB.get_key("PMSETTING"):
             except Exception as mm:
                 await e.eor(str(mm), time=5)
 
-    @amang(pattern="(a|approve)(?: |$)", fullsudo=True)
+    @amang_cmd(pattern="(a|approve)(?: |$)", fullsudo=True)
     async def approvepm(apprvpm):
         if apprvpm.reply_to_msg_id:
             user = (await apprvpm.get_reply_message()).sender
@@ -445,7 +445,7 @@ if udB.get_key("PMSETTING"):
         else:
             await apprvpm.eor("`User may already be approved.`", time=5)
 
-    @amang(pattern="(da|disapprove)(?: |$)", fullsudo=True)
+    @amang_cmd(pattern="(da|disapprove)(?: |$)", fullsudo=True)
     async def disapprovepm(e):
         if e.reply_to_msg_id:
             user = (await e.get_reply_message()).sender
@@ -496,7 +496,7 @@ if udB.get_key("PMSETTING"):
             )
 
 
-@amang(pattern="block( (.*)|$)", fullsudo=True)
+@amang_cmd(pattern="block( (.*)|$)", fullsudo=True)
 async def blockpm(block):
     match = block.pattern_match.group(1).strip()
     if block.reply_to_msg_id:
@@ -539,7 +539,7 @@ async def blockpm(block):
         pass
 
 
-@amang(pattern="unblock( (.*)|$)", fullsudo=True)
+@amang_cmd(pattern="unblock( (.*)|$)", fullsudo=True)
 async def unblockpm(event):
     match = event.pattern_match.group(1).strip()
     reply = await event.get_reply_message()
@@ -601,7 +601,7 @@ async def unblockpm(event):
         pass
 
 
-@amang(pattern="listapproved$", owner=True)
+@amang_cmd(pattern="listapproved$", owner=True)
 async def list_approved(event):
     xx = await event.eor(get_string("com_1"))
     all = get_approved()
