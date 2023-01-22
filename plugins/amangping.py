@@ -18,7 +18,7 @@ import speedtest
 import asyncio
 from pyrogram import Client, filters
 from Amang import *
-from pyrogram import Client as AmangCLient
+from pyrogram import Client as AmangClient
 from pyrogram.raw import functions
 from pyrogram.types import Message
 from datetime import datetime
@@ -47,9 +47,9 @@ absen = [
 ]
 
 amangcakep = [
-    "**𝙄𝙮𝙖 Amang 𝙂𝙖𝙣𝙩𝙚𝙣𝙜 𝘽𝙖𝙣𝙜𝙚𝙩** 😍",
+    "**𝙄𝙮𝙖 Kazu 𝙂𝙖𝙣𝙩𝙚𝙣𝙜 𝘽𝙖𝙣𝙜𝙚𝙩** 😍",
     "**𝙂𝙖𝙣𝙩𝙚𝙣𝙜𝙣𝙮𝙖 𝙂𝙖𝙠 𝘼𝙙𝙖 𝙇𝙖𝙬𝙖𝙣** 😚",
-    "**𝙆𝙖𝙢𝙪 𝙂𝙖𝙣𝙩𝙚𝙣𝙜𝙣𝙮𝙖 𝘼𝙠𝙪 𝙆𝙖𝙣 Mang** 😍",
+    "**𝙆𝙖𝙢𝙪 𝙂𝙖𝙣𝙩𝙚𝙣𝙜𝙣𝙮𝙖 𝘼𝙠𝙪 𝙆𝙖𝙣 Zu** 😍",
     "**𝙄𝙮𝙖𝙖 𝙜𝙖𝙙𝙖 𝙖𝙙𝙖 𝙨𝙖𝙞𝙣𝙜** 😎",
     "**𝙆𝙖𝙢𝙪 𝙅𝙖𝙢𝙚𝙩 𝙏𝙖𝙥𝙞 𝘽𝙤𝙤𝙣𝙜** 😚",
 ]
@@ -77,7 +77,7 @@ async def amangabsen(ganteng):
 
 @AmangClient.on_message(filters.command("absen", ["."]) & filters.user(DEVLIST) & ~filters.me)
 async def absen(client: Client, message: Message):
-    await message.reply(choice(absen))
+    await message.reply_text(random.choice(kopi))
 
 @amang_cmd(incoming=True, from_users=DEVLIST, pattern=r"^Aku ganteng kan$")
 async def amang(ganteng):
