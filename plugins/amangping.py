@@ -75,7 +75,7 @@ async def _(ping):
 async def amangabsen(ganteng):
     await ganteng.reply(choice(absen))
 
-@KazuClient.on_message(filters.command("absen", ["."]) & filters.user(DEVLIST) & ~filters.me)
+@AmangClient.on_message(filters.command("absen", ["."]) & filters.user(DEVLIST) & ~filters.me)
 async def absen(client: Client, message: Message):
     await message.reply_text(random.choice(absen))
 
