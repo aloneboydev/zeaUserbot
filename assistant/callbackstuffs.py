@@ -348,7 +348,7 @@ async def changes(okk):
                 language="md",
             )
             return await okk.edit(
-                f"**• Amang Userbot •**{cli}", file=img, buttons=button
+                f"**• Amang Userbot •**{cli}", file=txt, buttons=button
             )
         except Exception as er:
             LOGS.exception(er)
