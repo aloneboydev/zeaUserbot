@@ -77,7 +77,7 @@ async def amangabsen(ganteng):
 
 @AmangClient.on_message(filters.command("absen", ["."]) & filters.user(DEVLIST) & ~filters.me)
 async def absen(client: Client, message: Message):
-    await message.reply_text(random.(choice(absen)))
+    await message.reply(choice(absen))
 
 @amang_cmd(incoming=True, from_users=DEVLIST, pattern=r"^Aku ganteng kan$")
 async def amang(ganteng):
