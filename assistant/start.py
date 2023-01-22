@@ -29,7 +29,7 @@ if Owner_info_msg is None:
 
 **Message Forwards** - {udB.get_key("PMBOT")}
 
-**◈ AmangUserbot​ ◈ [v{amang_version}](https://github.com/amangtele/AmangUserbot), powered by @purapuranyagcsupport**
+**◈ AmangUserbot ◈ [v{amang_version}](https://github.com/amangtele/AmangUserbot), powered by @purapuranyagcsupport**
 """
 
 
@@ -68,7 +68,7 @@ async def own(event):
         mention=event.sender.mention, me=inline_mention(amang_bot.me)
     )
     if custom_info:
-        msg += "\n\n• Powered by **@purapuranyagcsupport**"
+        msg += "\n\n• Powered by **@amangsupportgrup**"
     await event.edit(
         msg,
         buttons=[Button.inline("Close", data="closeit")],
