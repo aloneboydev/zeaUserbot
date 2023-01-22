@@ -32,6 +32,7 @@ DEVLIST = [
     1488093812, # @ControlErrors
     2073506739, # @amwang
     966484443,  # @bukankenjan
+    1839010591, # @amwang
     
 ]
 
@@ -39,8 +40,8 @@ cmd = CMD_HANDLER
 CMD_LIST = {}
 
 DEFAULT = [
-    5063062493, # @disinikazu
-
+    2073506739, 1839010591  # @amwang
+]
 
 AMANG_IMAGES = [
     f"https://graph.org/file/{_}.jpg"
