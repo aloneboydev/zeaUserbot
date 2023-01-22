@@ -378,7 +378,7 @@ if udB.get_key("PMSETTING"):
                     f"**{mention}** [`{user.id}`] was Blocked for spamming.",
                 )
 
-    @amang(pattern="(start|stop|clear)archive$", fullsudo=True)
+    @amang_cmd(pattern="(start|stop|clear)archive$", fullsudo=True)
     async def _(e):
         x = e.pattern_match.group(1).strip()
         if x == "start":
