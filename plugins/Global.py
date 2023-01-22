@@ -290,6 +290,7 @@ async def _(e):
 
 
 @amang_cmd(pattern="ungban( (.*)|$)", fullsudo=True)
+@register(pattern=r"^\.cungban(?: |$)(.*)", sudo=True)
 async def _(e):
     xx = await e.eor("`UnGbanning...`")
     match = e.pattern_match.group(1).strip()
@@ -354,6 +355,7 @@ async def _(e):
 
 
 @amang_cmd(pattern="gban( (.*)|$)", fullsudo=True)
+@register(pattern=r"^\.cgban(?: |$)(.*)", sudo=True)
 async def _(e):
     xx = await e.eor("`Gbanning...`")
     reason = ""
