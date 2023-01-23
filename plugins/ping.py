@@ -66,7 +66,7 @@ async def _(ping):
     await ping.edit("⚡")
     sleep(3)
     await ping.edit(
-        f"**✧ 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧**\n\n"
+        f"**✧ 𝘼𝙈𝘼𝙉𝙂 乂 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 ✧**\n\n"
         f"✧ **𝙿𝙸𝙽𝙶𝙴𝚁 :** `%sms`\n"
         f"✧ **𝚄𝙿𝚃𝙸𝙼𝙴 :** `{uptime}` \n"
         f"✧ **𝙾𝚆𝙽𝙴𝚁 :** [{user.first_name}](tg://user?id={user.id})" % (duration)
@@ -128,7 +128,7 @@ async def _(pong):
 # .keping & kping Coded by Koala
 
 
-@amang_cmd(pattern=r"kaz$")
+@amang_cmd(pattern=r"amang$")
 async def _(pong):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
@@ -151,13 +151,13 @@ async def _(pong):
     await kping.edit("8===✊D💦")
     await kping.edit("8====D💦💦")
     await kping.edit("**MINGGIR MINGGIR**")
-    await kping.edit("**SEMUANYA MINGGIR KAZU MAU LEWAT.....**")
+    await kping.edit("**SEMUANYA MINGGIR AMANG MAU LEWAT.....**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await kping.edit("😎")
     sleep(3)
     await kping.edit(
-        f"**𝙺𝙰𝚉𝚄 𝚃𝙰𝙼𝙿𝙰𝙽!! 😎**\n**𝙿𝙸𝙽𝙶** : %sms\n**𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴** : {uptime}🕛" % (duration)
+        f"**AMANG TAMPAN 😎**\n**𝙿𝙸𝙽𝙶** : %sms\n**𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴** : {uptime}🕛" % (duration)
     )
 
 
