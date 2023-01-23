@@ -373,7 +373,7 @@ async def ibuild(e):
                             _pic,
                             title="Amang Op",
                             text=txt,
-                            description="@Riizzvbss",
+                            description="@amwang",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -389,7 +389,7 @@ async def ibuild(e):
                         title="Amang Op",
                         type=_type,
                         text=txt,
-                        description="@Riizzvbss",
+                        description="@amwang",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
