@@ -52,8 +52,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/Onlymeriz/Amang"),
-        Button.url("• Support •", url="t.me/purapuranyagcsupport"),
+        Button.url("• Repo •", url="https://github.com/amangtele/AmangUserbot"),
+        Button.url("• Support •", url="t.me/amangsupportgrup"),
     ],
 ]
 
@@ -168,7 +168,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n◈ Amang Userbot"
+    help_ += "\n◈ 𝘼𝙈𝘼𝙉𝙂 乂 𝙐𝙎𝙀𝙍𝘽𝙊𝙏"
     buttons = []
     if inline_pic():
         data = f"sndplug_{key}_{file}"
